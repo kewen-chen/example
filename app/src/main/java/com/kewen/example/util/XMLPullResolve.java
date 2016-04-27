@@ -13,7 +13,7 @@ public class XMLPullResolve {
 
     public static ArrayList<Stuff> list;
     
-    public static void parseXMLWithPull(String xmlData) {
+    public static ArrayList<Stuff> parseXMLWithPull(String xmlData) {
 
         try {
             XmlPullParserFactory factory = XmlPullParserFactory.newInstance();
@@ -56,6 +56,8 @@ public class XMLPullResolve {
         } catch (Exception e) {
             e.printStackTrace();
         }
+
+        return list;
     }
 
 

@@ -28,6 +28,10 @@ public class Stuff implements Parcelable{
     private String name;
     private String version;
 
+    public Stuff() {
+
+    }
+
     public String getId() {
         return id;
     }
